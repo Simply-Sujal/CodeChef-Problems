@@ -1,19 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main(){
-    string s;
-    cin >> s;
-    if (s == "R R" || s == "R B" || s == "R G" || s == "B R" || s == "G R")
+    string S;
+    getline(cin,S);
+    if (S == "R R" || S == "R B" || S == "R G" || S == "B R" || S == "G R")
     {
         cout << "R";
     }
 
-    else if(s == "B B" || s == "B G" || s == "G B"){
+    else if(S == "B B" || S == "B G" || S == "G B"){
         cout << "B";
     }
     
-    else if(s == "G G"){
+    else if(S == "G G"){
         cout << "G";
     }
 }
